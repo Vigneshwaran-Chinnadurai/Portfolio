@@ -1,0 +1,478 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+/* Gendral */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+p{
+    color: rgb(85, 85,85);
+}
+
+/* Transition */
+
+a, .btn{
+    transition: all 300ms ease;
+}
+
+/* Desktop Nav */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+    width: 100%;
+}
+.nav-links{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-size: 18px;
+}
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration: white;
+}
+a:hover{
+    color: rgb(156, 138, 138);
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-color: rgb(181, 181, 181);
+}
+.logo{
+    font-size: 2rem;
+    transition: 0.5s;
+    color: black;
+    text-shadow: 5px 2px 5px rgba(90, 90, 90, 0.564);
+}
+.logo:hover{
+    cursor: pointer;
+    letter-spacing: 0.2px;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+/*Hamburger Menu  */
+
+#hamburger-nav{
+    display: none;
+}
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+.hamburger-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links li{
+    list-style: none;
+}
+.menu-links.open{
+    max-height: 300px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+}
+.hamburger-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px, 5px);
+}
+.hamburger-icon.open span:nth-child(2){
+    opacity:0;
+}
+.hamburger-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+.hamburger-icon span:first-child{
+    transform: none;
+}
+.hamburger-icon span:first-child{
+    opacity: 1;
+}
+.hamburger-icon span:first-child{
+    transform: none;
+}
+
+/* Sections */
+
+section{
+    padding: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+.section-container{
+    display: flex;
+}
+
+/* Profile Section */
+
+.p_image{
+    box-shadow: 0px 10px 40px 5px rgba(0, 0, 0, 0.66);
+    border-radius: 20px;
+    transition: 2s;
+}
+.p_image:hover{
+    transform: scale(1.02);
+    transition: 2s;
+}
+#profile{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+    position: relative;
+}
+.section__pic-container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+
+}
+.arrow{
+    position: absolute;
+    right: -8rem;
+    bottom: 0rem;
+}
+.section__text{
+    align-self: center;
+    text-align: center;
+}
+.section__text p{
+    font-weight: 600;
+}
+.section__text__p1{
+    text-align: center;
+}
+.section__text__p2{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+.title{
+    font-size: 3rem;
+    text-align: center;
+    transition: 0.5s;
+    text-shadow: 5px 2px 5px rgba(95, 95, 95, 0.564);
+    cursor: default;
+}
+.title:hover{
+    letter-spacing: 0.2px;
+    transform:scale(1.06);
+    transition: 0.5s;
+}
+#social-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* Icon */
+
+.icon{
+    cursor: pointer;
+    height: 2rem;
+    margin-top: 1rem;
+}
+.naukriicon{
+    border-radius: 20px;
+    margin-left: 8px;
+}
+.githubicon{
+    margin-left: 8px;
+}
+
+/* Buttons */
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.btn{
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+.btn-color-1, .btn-color-2{
+    border: 0.1rem rgb(53, 53, 53) solid;
+}
+.btn-color-1:hover, .btn-color-2:hover{
+    cursor: pointer;
+}
+.btn-color-1,.btn-color-2:hover{
+    background: rgb(53, 53, 53);
+    color: white;
+}
+.btn-color-1:hover{
+    background-color: rgb( 0, 0, 0);
+}
+.btn-color-2{
+    background-color: none;
+}
+.btn-color-2:hover{
+    border: 0.1rem rgb(255, 255, 255) solid;
+}
+.btn-container{
+    gap: 1rem;
+}
+
+/* About Section */
+
+#about{
+    position: relative;
+    margin-left: 155px;
+}
+
+.about-container{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    /* border: rgb(53, 53, 53) 2px solid; */
+    border-radius: 20px;
+    display: flex;
+}
+.about-deatils-container{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+.about-container, .about-deatils-container{
+    display: flex;
+}
+.about-pic{
+    border-radius: 30px;
+     box-shadow: 0px 12px 25px 2px rgba(0, 0, 0, 0.66);
+    width: 290px;
+    height: 390px;
+     transition: 2s;
+}
+.about-pic:hover{
+    transform: scale(1.02);
+    transition: 2s;
+}
+.section__About_pic-container{
+    display: flex;
+    justify-content: center;
+    height: 450px;
+    /* width: 450px; */
+    margin: auto 0;
+    margin-bottom: 20px;
+    margin-left: -90PX;
+}
+.arrow{
+    position: absolute;
+    right: -8rem;
+    bottom: 1.8rem;
+    margin-bottom: 22px;
+}
+.arrowsecond{
+    bottom: -5.0rem;
+}
+.details-container {
+    padding: 1.2rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border-color:rgb(163, 163, 163);
+    border: 2px rgb(163, 163, 163) solid;
+    text-align: center;
+    transition: 0.5s;
+    background-color: whitesmoke;
+}
+.edu{
+    font-size: 26px;
+}
+.edu_p{
+    font-size: 19px;
+}
+.section-container{
+    width: 1100px;
+    gap: 3.3rem;
+    height: 92%;
+}
+.section__pic-container{
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+/* .text-container{
+    width: 700px;
+    height: 543px;
+} */
+
+
+/* Experience Section*/
+
+#experience{
+    position: relative;
+    margin-top: 200px;
+}
+.experience-sub-title{
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+.experience-details-container{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+.article-container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+article{
+    display: flex;
+    width: 10rem;
+    /* justify-content: space-around; */
+    gap: 0.5rem;
+}
+article .icon{
+  cursor: default;
+}
+
+/* Projects Section */
+
+#projects{
+    position: relative;
+}
+.grid-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.color-container{
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+    transition: 0.5s;
+    background-color: whitesmoke;
+}
+.details-container:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.arrowfour{
+    bottom: 4.0rem;
+}
+.project-img{
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+.project-title{
+    margin: 1rem ;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.project-btn{
+    color: black;
+    border-color: rgb(163, 163, 163);
+}
+
+/* Contact Section */
+
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    margin-top: 95px;
+}
+.contact-info-upper-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.7rem;
+    background-color: whitesmoke;
+    padding-bottom: 25px;
+}
+/* .contact-info-upper-container:hover{
+    transform: scale(1.02);
+    transition: 1.0s;
+    cursor: pointer;
+    margin-left: 100px;
+} */
+.contact-info-container{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+.contact-info-container p{
+    font-size: larger;
+}
+.contact-icon{
+    cursor: default;
+}
+.email-icon{
+    height: 2.5rem;
+}
+.call-icon{
+    height: 2.5rem;
+}
+
+/* Footer Section */
+
+footer{
+    height: 26vh;
+    margin: 0 1rem;
+    margin-top: 90px;
+}
+footer p{
+    text-align: center;
+    padding: 20px;
+}

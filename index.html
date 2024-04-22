@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VIGNESHWARAN-PORTFOLIO</title>
+    <link rel="icon" href="/Assets/portfolio.jpg" id="pf-icon">
+    <link rel="stylesheet" href="/CSS/Portfolio.css">
+    <link rel="stylesheet" href="/CSS/Media style.css">
+    <script src="/JAVASCRIPT/Portfolio.js"></script>
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo">Vigneshwaran Chinnadurai</div>
+          <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Vigneshwaran Chinnadurai</div>
+          <div class="hamburger-menu">
+             <div class="hamburger-icon" onclick="toggleMenu()">
+               <span></span>
+               <span></span>
+               <span></span>
+             </div>
+          <div class="menu-links">
+                <li><a href="#about"  onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills"  onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects"  onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact"  onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div> 
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="/Assets/Vigneshwaran Image.png" alt="Vigneshwaran Photo" class="p_image">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Vigneshwaran C</h1>
+              <p class="section__text__p2">Fresher</p>
+                  <div class="btn-container">
+                     <button class="btn btn-color-2" onclick="window.open('/Assets/Vigneshwaran Resume.pdf')"> 
+                        Download CV</button>
+
+                     <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                        Contact Info</button>
+                  </div>
+                  <div id="socials-container">
+                     <img src="/Assets/linkedin.png" alt="My Linkedln Profile" class="icon linkedinicon" onclick="location.href='https://www.linkedin.com/in/vigneshwaranchinnadurai'">
+
+                     <img src="/Assets/github.png" alt="My Github Profile" class="icon githubicon" onclick="location.href='https://github.com/Vigneshwaran-Chinnadurai'"/>
+
+                     <img src="/Assets/naukri.jpeg" alt="My Naukri Profile" class="icon naukriicon" onclick="location.href='https://www.naukri.com/mnjuser/profile'">
+                  </div>
+        </div>
+        <img src="/Assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'"/>
+    </section>
+
+    <section id="about">
+       <p class="section__text__p1">Get To Know More</p>
+       <h1 class="title">About Me</h1>
+         <div class="section-container">
+            <div class="section__About_pic-container">
+               <img src="/Assets/About Image.png" alt="Profile Picture" class="about-pic">
+            </div>
+              <div class="about-details-container">
+                  <div class="about-container">
+                     <!-- <div class="details-container"> 
+                        <img src="./Assets/experience.png" alt="experience icon" class="icon">
+                     </div> -->
+                        <div class="details-container"> 
+                           <img src="/Assets/education.png" alt="education icon" class="icon">
+                           <h3 class="edu">Education</h3>
+                              <p class="edu_p">B.Tech <b>Information Technology </b> <br>2024</p>
+                        </div>
+                  </div>
+
+            <div class="text-container">
+               
+               <!-- <p> Hello, I would like to welcome you to see my <strong>Portfolio</strong>, I'm <strong>Vigneshwaran Chinnadurai</strong>, I'm from Palani and Currently, i am pursuing a Bachelor of Technology (B.Tech) in the stream <strong>Information Technology (IT)</strong> and am expected to graduate in <b> 2024</b>. As of my sixth semester, I have achieved an <b>8.2 CGPA</b> and my short term goal is get job in an IT companiy and my long term goal is get an higher postion in IT field. My hobbies are playing cricket and hearing songs and my strength is <b> slef motivated person and creating a positive vibes around me</b>, and week is thinking about something all time that what is going to do next.!!! <br>
+                  <br>
+                  Motivated, proactive, and hands-on developer with skills on managing information systems for <b> software development and cloud based areas </b> an Energetic individual with <b> team leadership qualities and strong organizational skills</b>.
+               </p> -->
+
+               <p>
+                  Hello, I would like to welcome you to view my <strong>portfolio</strong>. I'm <strong>Vigneshwaran Chinnadurai </strong> from Palani. Currently, i am pursuing a Bachelor of Technology (B.Tech) in the stream <strong> Information Technology (IT)</strong> and am expected to graduate in <b>2024</b> . As of my sixth semester, I have achieved an <b>8.2 CGPA</b>.
+                  <br><br>
+                  My short-term goal is to secure a job in an IT company, while my long-term goal is to attain a higher position in the IT field. My hobbies include playing cricket and listening to songs.
+                     <br><br>
+                  One of my strengths is <b> being a self-motivated individual who creates positive vibes around me</b>. However, one area I'm working on is overthinking about what to do next.
+                  <br><br>
+                  I am a motivated, proactive, and hands-on developer with skills in managing information systems for <b>software development and cloud-based areas.</b> I am also  an energetic individual with <b> team leadership qualities and strong organizational skills.</b>
+               </p>
+
+            </div>
+         </div>
+       </div>
+      <img src="/Assets/arrow.png" alt="Arrow icon" class="icon arrow arrowsecond" onclick="location.href='./#experience'"/>
+    </section>
+
+    <section id="experience">
+       <p class="section__text__p1">Explore My</p>
+       <h1 class="title">Skills</h1>
+         <div class="experience-details-container"> 
+            <div class="about-container">
+               <div class="details-container">
+                 <h2 class="experience-sub-title">Wep Development</h2>
+                   <div class="article-container">
+                      <article>
+                         <img src="/Assets/checkmark.png" alt="experience icon" class="icon">
+                           <div>
+                              <h3>HTML</h3>
+                              <p>Advance</p>
+                           </div>
+                      </article>
+                       <article>
+                         <img src="/Assets/checkmark.png" alt="experience icon" class="icon">
+                           <div>
+                              <h3>CSS</h3>
+                              <p>Advance</p>
+                           </div>
+                      </article>
+                       <article>
+                         <img src="/Assets/checkmark.png" alt="experience icon" class="icon">
+                           <div>
+                              <h3>SQL</h3>
+                              <p>Advance</p>
+                           </div>
+                      </article>
+                       <article>
+                         <img src="/Assets/checkmark.png" alt="experience icon" class="icon">
+                           <div>
+                              <h3>Github</h3>
+                              <p>Intermediate</p>
+                           </div>
+                      </article>
+                   </div>
+               </div>
+
+                <div class="details-container">
+                 <h2 class="experience-sub-title">Programming Languages</h2>
+                   <div class="article-container">
+                      <article>
+                         <img src="/Assets/checkmark.png" alt="experience icon" class="icon">
+                           <div>
+                              <h3>Java</h3>
+                              <p>Intermediate</p>
+                           </div>
+                      </article>
+                       <article>
+                         <img src="/Assets/checkmark.png" alt="experience icon" class="icon">
+                           <div>
+                              <h3>C Programming</h3>
+                              <p>Basic</p>
+                           </div>
+                      </article>
+                       <article>
+                         <img src="/Assets/checkmark.png" alt="experience icon" class="icon">
+                           <div>
+                              <h3>JavaScript</h3>
+                              <p>Intermediate</p>
+                           </div>
+                      </article>
+                       <article>
+                         <img src="/Assets/checkmark.png" alt="experience icon" class="icon">
+                           <div>
+                              <h3>Python</h3>
+                              <p>Basic</p>
+                           </div>
+                      </article>
+                   </div>
+               </div>
+            </div>
+         </div>
+       <img src="/Assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+    </section>
+
+    <section id="projects">
+       <p class="section__text__p1">Browse My Recent</p>
+       <h1 class="title"> Projects</h1>
+         <div class="experience-details-container">
+            <div class="about-container grid-container">
+              <div class="details-container color-container" >
+                <div class="article-container">
+                  <img src="/Assets/Project 1.png" alt="Project 1" class="project-img">
+                </div>
+                  <h2 class="experience-sub-title project-title">SPOTSTAR</h2>
+                     <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href=''">
+                           Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href=''">
+                           Live Demo
+                        </button>
+                     </div>
+              </div>
+
+               <div class="details-container color-container" >
+                  <div class="article-container">
+                     <img src="/Assets/Project 2.png" alt="Project 2" class="project-img">
+                  </div>
+                     <h2 class="experience-sub-title project-title">ZOMATO-COPY</h2>
+                        <div class="btn-container">
+                           <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Vigneshwaran-Chinnadurai/Zomato.git'">
+                              Github
+                           </button>
+                           <button class="btn btn-color-2 project-btn" onclick="location.href='https://sparkling-pika-d54d99.netlify.app/'">
+                              Live Demo
+                           </button>
+                        </div>
+               </div>
+
+               <div class="details-container color-container" >
+                 <div class="article-container">
+                   <img src="/Assets/Project 3.png" alt="Project 3" class="project-img">
+                 </div>
+                   <h2 class="experience-sub-title project-title">GOOGLE-COPY</h2>
+                     <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Vigneshwaran-Chinnadurai/Google.git'">
+                           Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://dashing-dieffenbachia-dfe769.netlify.app'">
+                           Live Demo
+                        </button>
+                     </div>
+              </div>
+
+              <div class="details-container color-container" >
+                  <div class="article-container">
+                     <img src="/Assets/Project 4.png" alt="Project 4" class="project-img">
+                  </div>
+                     <h2 class="experience-sub-title project-title">INSTAGRAM-COPY</h2>
+                        <div class="btn-container">
+                           <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Vigneshwaran-Chinnadurai/Instagram.git'">
+                              Github
+                           </button>
+                           <button class="btn btn-color-2 project-btn" onclick="location.href='https://sage-blini-c05706.netlify.app'">
+                              Live Demo
+                           </button>
+                        </div>
+               </div>
+
+               <div class="details-container color-container" >
+                  <div class="article-container">
+                     <img src="/Assets/Project 5.png" alt="Project 5" class="project-img">
+                  </div>
+                     <h2 class="experience-sub-title project-title">FACEBOOK-COPY</h2>
+                        <div class="btn-container">
+                           <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Vigneshwaran-Chinnadurai/Facebook.git'">
+                              Github
+                           </button>
+                           <button class="btn btn-color-2 project-btn" onclick="location.href='https://gleeful-stardust-1c84bc.netlify.app'">
+                              Live Demo
+                           </button>
+                        </div>
+               </div>
+
+               <div class="details-container color-container" >
+                  <div class="article-container">
+                     <img src="/Assets/Project 6.png" alt="Project 6" class="project-img">
+                  </div>
+                     <h2 class="experience-sub-title project-title">PRICING TABLE</h2>
+                        <div class="btn-container">
+                           <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Vigneshwaran-Chinnadurai/Pricing-Table.git'">
+                              Github
+                           </button>
+                           <button class="btn btn-color-2 project-btn" onclick="location.href='https://symphonious-madeleine-f310cd.netlify.app'">
+                              Live Demo
+                           </button>
+                        </div>
+               </div>
+           </div>
+         </div>
+      <img src="/Assets/arrow.png" alt="Arrow icon" class="icon arrow arrowfour" onclick="location.href='./#contact'"/>
+    </section>
+    
+    <section id="contact">
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+
+          <div class="contact-info-container">
+            <img src="/Assets/email.png" alt="mail icon" class="icon contact-icon email-icon">
+            <p><a href="mailto:vigneshwaranchinnadurai34@gmail.com">vigneshwaranchinnadurai34@gmail.com</a></p>
+          </div>
+
+           <div class="contact-info-container">
+            <img src="/Assets/linkedin.png" alt="linkedin icon" class="icon contact-icon linkedin-icon">
+            <p><a href=" https://www.linkedin.com/in/vigneshwaranchinnadurai">Linkedin</a></p>
+           </div>
+
+           <div class="contact-info-container">
+            <img src="/Assets/whatsapp.png" alt="whatsapp icon" class="icon contact-icon whatsapp-icon">
+            <p><a href="https://wa.me/8098597812">Whatsapp</a></p>
+           </div>
+
+           <div class="contact-info-container">
+            <img src="/Assets/call.jpg" alt="call icon" class="icon contact-icon call-icon">
+            <p><a href="tel:+918098597812">Phone</a></p>
+           </div>
+        </div>
+    </section>
+
+    <footer>
+       <nav>
+         <div class="nav-links-container">
+             <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+         </div>
+       </nav>
+       <div id="line">
+         <hr class="line">
+       </div>
+      <p>Copyright &#169; 2024 Vigneshwaran. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
