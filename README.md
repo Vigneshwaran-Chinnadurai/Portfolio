@@ -7,6 +7,6 @@ Welcome to My Portfolio :
       Beyond technical skills, I believe in the importance of effective communication, collaboration, and a strong commitment to quality in every aspect of development. Whether it's crafting clean, maintainable code or working closely with clients to understand their needs, I strive for excellence in all that I do.
 
       Thank you for taking the time to explore my portfolio.
-
-                                                                                                                                      Warm regards,
-                                                                                                                                Vigneshwaran Chinnadurai
+      
+Warm regards,
+Vigneshwaran Chinnadurai
