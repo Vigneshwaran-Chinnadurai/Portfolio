@@ -12,6 +12,21 @@
   }
 }
 
+@media screen and (max-width: 1300px) {
+  #profile {
+    height: 85vh;
+    margin-bottom: 4rem;
+  }
+  .about-container {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #about,
+  #projects {
+    height: fit-content;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
